@@ -1,9 +1,9 @@
 import React from 'react';
 import './CartComponent.css';
 
-const CartComponent = ({ count }) => {
+const CartComponent = (props) => {
   return (
-    <div className="cart-component">
+    <div onClick={props.props.onOpenCart} className="cart-component">
       <div className="cart-icon">
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
@@ -14,7 +14,7 @@ const CartComponent = ({ count }) => {
         </svg>
       </div>
       <div className="cart-text">Your Cart</div>
-      <div className="cart-counter">{count}</div>
+      <div className="cart-counter">{props.count}</div>
     </div>
   );
 };

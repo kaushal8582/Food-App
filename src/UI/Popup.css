@@ -1,0 +1,159 @@
+.popup-Box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.677);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.pop-cart {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.pop-cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.pop-cart-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.pop-cart-close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.pop-cart-close-btn:hover {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.pop-cart-content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.pop-cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #eaeaea;
+  margin-top: 10px;
+}
+
+.pop-cart-total-label {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.pop-cart-total-amount {
+  font-weight: 700;
+  font-size: 18px;
+  color: #2a2a2a;
+}
+
+.pop-cart-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-top: 1px solid #eaeaea;
+  background-color: #f9f9f9;
+}
+
+.pop-cart-btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pop-cart-close {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #555;
+}
+
+.pop-cart-close:hover {
+  background-color: #eaeaea;
+}
+
+.pop-cart-order {
+  background-color: #4a90e2;
+  border: 1px solid #4a90e2;
+  color: white;
+}
+
+.pop-cart-order:hover {
+  background-color: #3a7bc8;
+}
+
+/* Overlay for the background */
+.pop-cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Animation for cart appearance */
+@keyframes slideIn {
+  from {
+    transform: translate(-50%, -60%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.pop-cart {
+  animation: slideIn 0.3s ease forwards;
+}
+
+.buttons-in-popup {
+  display: flex;
+  gap: 20px;
+}
+
+.box-cart{
+  display: flex;
+  gap: 30px;
+}
